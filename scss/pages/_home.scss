@@ -1,0 +1,140 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+@use "../layout" as *;
+
+.container {
+  width: 390px;
+  margin: auto;
+  background-color: $color-bg-dark;
+}
+
+header {
+  padding: 16px 28.56px 24px 27.79px;
+}
+
+.header_nav ul {
+  @include flex-space-between;
+  li a {
+    @include flex-center;
+    flex-direction: column;
+    gap: 8px;
+    color: $color-text-alt;
+
+    div {
+      @include flex-center;
+      width: 40.41px;
+      height: 40.41px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.main_box {
+  padding: 15px;
+}
+
+.sidebar {
+  @include flex-space-between;
+  padding-block: 9px;
+  margin-bottom: 13px;
+  .sidebar_section {
+    @include flex-space-between;
+    gap: 10px;
+    button {
+      @include flex-center;
+      @include aside-btn;
+    }
+  }
+  article {
+    width: 41.41px;
+    height: 41.41px;
+    overflow: hidden;
+    @include flex-center;
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.home_main_box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home_main_box_catalog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+
+  .home_main_box_catalog_card {
+    @include flex-space-between;
+    @include catalog-card;
+    gap: $spacing-sm;
+
+    min-width: 0;
+    img {
+      width: 43px;
+      height: 43px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    .text_box {
+      min-width: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      h3 {
+        @include truncate-text;
+        color: $color-text-btn;
+        font-weight: 700;
+      }
+      p {
+        @include truncate-text;
+      }
+    }
+  }
+}
+
+.home_main_box_made_for_you {
+  display: flex;
+  gap: 9px;
+
+  .home_main_box_made_for_you_card {
+    max-width: 141.06px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    .home_main_box_made_for_you_card_image_box {
+      position: relative;
+      @include flex-column;
+      gap: 1px;
+
+      .home_main_box_made_for_you_card_image_box_first_line {
+        padding-inline: 15.35px;
+        border-radius: 6.02px 6.02px 0 0;
+        height: 2.49px;
+        background-color: #ce6e9925;
+      }
+      .home_main_box_made_for_you_card_image_box_second_line {
+        padding-inline: 6.64px;
+        border-radius: 6.02px 6.02px 0 0;
+        height: 4.98px;
+        background-color: #ce6e9a;
+      }
+
+      img {
+        width: 146.01px;
+        height: 146.01px;
+        object-fit: cover;
+        border-radius: 6.02px;
+      }
+    }
+  }
+}

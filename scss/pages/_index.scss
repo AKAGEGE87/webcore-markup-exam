@@ -1,3 +1,3 @@
-@use "./home";
-@use "./discover";
-@use "./search";
+@forward "./home";
+@forward "./discover";
+@forward "./search";

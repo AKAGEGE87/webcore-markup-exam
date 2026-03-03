@@ -1,0 +1,46 @@
+@use "./variables" as *;
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin aside-btn {
+  @include flex-center;
+  padding: 8px 15px;
+  color: $color-text-btn;
+  background-color: $color-bg-btn;
+  font-size: $font-size-sm;
+  border-radius: $radius-md;
+  font-weight: $font-weight-regular;
+  letter-spacing: 3%;
+  cursor: pointer;
+}
+
+@mixin catalog-card {
+  padding: $spacing-sm;
+  background-color: $color-bg-btn;
+  border-radius: $radius-lg;
+  color: $color-text-alt;
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
+  letter-spacing: 3%;
+}
+
+@mixin truncate-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 0;
+}

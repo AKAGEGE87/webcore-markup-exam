@@ -4,14 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container">
-      <header></header>
-      <div class="box">
-        <aside class="sidebar"></aside>
-        <main></main>
+      <header>
+        <nav class="header_nav">
+          <ul>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="./assets/home_images/svg/home.svg" alt="home" />
+                </div>
+                <span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="./assets/home_images/svg/star.svg" alt="star" />
+                </div>
+                <span>Discover</span></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="./assets/home_images/svg/search.svg" alt="search" />
+                </div>
+                <span>Search</span></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img
+                    src="./assets/home_images/svg/library.svg"
+                    alt="library"
+                  />
+                </div>
+                <span>Library</span></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="./assets/home_images/svg/user.svg" alt="user" />
+                </div>
+                <span>Me</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="main_box">
+        <aside class="sidebar">
+          <section class="sidebar_section">
+            <button>Music</button>
+            <button>Podcasts</button>
+            <button>Audiobooks</button>
+          </section>
+          <article>
+            <img src="./assets/home_images/svg/sidebar.svg" alt="sidebar" />
+          </article>
+        </aside>
+        <main class="home_main_box">
+          <section class="home_main_box_catalog">
+            <article class="home_main_box_catalog_card">
+              <img src="./assets/home_images/img/1.png" alt="lucky" />
+              <div class="text_box">
+                <h3>Get Lucky (feat. Pharrell Williams and Nile Rodgers)</h3>
+                <p>Daft Punk</p>
+              </div>
+            </article>
+
+            <article class="home_main_box_catalog_card">
+              <img src="./assets/home_images/img/3.png" alt="lucky" />
+              <div class="text_box">
+                <h3>Daily Mix 2</h3>
+              </div>
+            </article>
+
+            <article class="home_main_box_catalog_card">
+              <img src="./assets/home_images/img/2.png" alt="lucky" />
+              <div class="text_box">
+                <h3>Daily Mix 1</h3>
+              </div>
+            </article>
+
+            <article class="home_main_box_catalog_card">
+              <img src="./assets/home_images/img/1.png" alt="lucky" />
+              <div class="text_box">
+                <h3>Around the world</h3>
+                <p>Daft Punk</p>
+              </div>
+            </article>
+
+            <article class="home_main_box_catalog_card">
+              <img src="./assets/home_images/img/1.png" alt="lucky" />
+              <div class="text_box">
+                <h3>Instant Crush</h3>
+                <p>Daft Punk</p>
+              </div>
+            </article>
+
+            <article class="home_main_box_catalog_card">
+              <img src="./assets/home_images/img/4.png" alt="lucky" />
+
+              <div class="text_box">
+                <h3>Rock Mix</h3>
+              </div>
+            </article>
+          </section>
+          <section class="home_main_box_made_for_you">
+            <article class="home_main_box_made_for_you_card">
+              <div class="home_main_box_made_for_you_card_image_box">
+                <div
+                  class="home_main_box_made_for_you_card_image_box_first_line"
+                ></div>
+                <div
+                  class="home_main_box_made_for_you_card_image_box_second_line"
+                ></div>
+                <img
+                  src="./assets/home_images/img/made_for_you1.png"
+                  alt="discover weekly"
+                />
+              </div>
+              <div class="home_main_box_made_for_you_card_text_box">
+                <h3>Discover Weekly <span>50</span></h3>
+                <p>Your weekly update of the most listened to tracks</p>
+              </div>
+            </article>
+          </section>
+        </main>
       </div>
       <footer></footer>
     </div>
