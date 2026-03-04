@@ -61,16 +61,30 @@
           </ul>
         </nav>
       </header>
+
       <div class="main_box">
         <aside class="sidebar">
-          <section class="sidebar_section">
-            <button>Music</button>
-            <button>Podcasts</button>
-            <button>Audiobooks</button>
+          <section class="status_bar">
+            <div class="status_bar_left">
+              <p>9:41</p>
+              <img src="./assets/home_images/svg/gps.svg" alt="gps" />
+            </div>
+            <div class="status_bar_right">
+              <img src="./assets/home_images/svg/network.svg" alt="network" />
+              <img src="./assets/home_images/svg/data.svg" alt="data" />
+              <img src="./assets/home_images/svg/battery.svg" alt="battery" />
+            </div>
           </section>
-          <article>
-            <img src="./assets/home_images/svg/sidebar.svg" alt="sidebar" />
-          </article>
+          <section class="sidebar_section">
+            <article class="sidebar_section_menu">
+              <button class="active">Music</button>
+              <button>Podcasts</button>
+              <button>Audiobooks</button>
+            </article>
+            <article class="sidebar_section_menu_img">
+              <img src="./assets/home_images/svg/sidebar.svg" alt="sidebar" />
+            </article>
+          </section>
         </aside>
         <main class="home_main_box">
           <section class="home_main_box_catalog">
@@ -121,28 +135,383 @@
             </article>
           </section>
           <section class="home_main_box_made_for_you">
-            <article class="home_main_box_made_for_you_card">
-              <div class="home_main_box_made_for_you_card_image_box">
-                <div
-                  class="home_main_box_made_for_you_card_image_box_first_line"
-                ></div>
-                <div
-                  class="home_main_box_made_for_you_card_image_box_second_line"
-                ></div>
-                <img
-                  src="./assets/home_images/img/made_for_you1.png"
-                  alt="discover weekly"
-                />
-              </div>
-              <div class="home_main_box_made_for_you_card_text_box">
-                <h3>Discover Weekly <span>50</span></h3>
-                <p>Your weekly update of the most listened to tracks</p>
-              </div>
-            </article>
+            <div class="home_main_box_made_for_you_title">
+              <h1>Made For You</h1>
+              <span>...</span>
+            </div>
+            <div class="home_main_box_made_for_you_cards">
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_one"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_one"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/made_for_you1.png"
+                    alt="discover weekly"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Discover Weekly</h3>
+                    <span class="made_for_you_span_one">50</span>
+                  </div>
+                  <p>Your weekly mixtape of fresh music.</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_two"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_two"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/made_for_you2.png"
+                    alt="daily mix 1"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Daily Mix 1</h3>
+                    <span class="made_for_you_span_two">50</span>
+                  </div>
+                  <p>Linkin Park, System Of A Down, Coal Chamber...</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_three"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_three"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/made_for_you3.png"
+                    alt="daily mix 2"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Daily Mix 2</h3>
+                    <span class="made_for_you_span_three">50</span>
+                  </div>
+                  <p>Avril Lavigne, Lorde, Charli XCX and more</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_four"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_four"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/made_for_you4.png"
+                    alt="daily mix 3"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Daily Mix 3</h3>
+                    <span class="made_for_you_span_four">50</span>
+                  </div>
+                  <p>The Strokes, Martin Garrix, MGMT and more</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_five"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_five"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/made_for_you5.png"
+                    alt="daily mix 4"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Daily Mix 4</h3>
+                    <span class="made_for_you_span_five">50</span>
+                  </div>
+                  <p>Chuck Berry, Elvis Presley, Roy Orbison and more</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_six"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_six"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/made_for_you6.png"
+                    alt="daily mix 5"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Daily Mix 5</h3>
+                    <span class="made_for_you_span_six">50</span>
+                  </div>
+                  <p>Frank Sinatra, Gerhard Trede, Dean Martin and more</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_seven"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_seven"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/made_for_you7.png"
+                    alt="daily mix 6"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Nirvana Radio</h3>
+                    <span class="made_for_you_span_seven">50</span>
+                  </div>
+                  <p>The Strokes, Martin Garrix, MGMT and more</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_eight"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_eight"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/made_for_you8.png"
+                    alt="daily mix 7"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Fall Out Boy Radio</h3>
+                    <span class="made_for_you_span_eight">50</span>
+                  </div>
+                  <p>With Panic! At The Disco, The All-American Rejects,...</p>
+                </div>
+              </article>
+            </div>
+          </section>
+          <section class="home_main_box_made_for_you">
+            <div class="home_main_box_made_for_you_title">
+              <h1>Your top mixes</h1>
+              <span>...</span>
+            </div>
+            <div class="home_main_box_made_for_you_cards">
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_one your_top_mixes_first_line_one"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_one your_top_mixes_second_line_one"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/your_top-mixes1.png"
+                    alt="discover weekly"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Rock Mix</h3>
+                    <span class="your_top-mixes_span_one">50</span>
+                  </div>
+                  <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_two your_top_mixes_first_line_two"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_two your_top_mixes_second_line_two"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/your_top-mixes2.png"
+                    alt="daily mix 1"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Chill Mix</h3>
+                    <span class="your_top-mixes_span_two">50</span>
+                  </div>
+                  <p>MF DOOM, Daft Punk, The Chainsmokers, and more</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_three your_top_mixes_first_line_three"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_three your_top_mixes_second_line_three"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/your_top-mixes3.png"
+                    alt="daily mix 2"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Pop Mix</h3>
+                    <span class="your_top-mixes_span_three">50</span>
+                  </div>
+                  <p>Red Hot Chili Peppers, R.E.M., Guns N’ Roses...</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_four your_top_mixes_first_line_four"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_four your_top_mixes_second_line_four"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/your_top-mixes4.png"
+                    alt="daily mix 3"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Daft Punk Mix</h3>
+                    <span class="your_top-mixes_span_four">50</span>
+                  </div>
+                  <p>Daft Punk, MGMT, Muse, and more</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_five your_top_mixes_first_line_five"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_five your_top_mixes_second_line_five"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/your_top-mixes5.png"
+                    alt="daily mix 4"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Happy Mix</h3>
+                    <span class="your_top-mixes_span_five">50</span>
+                  </div>
+                  <p>The Turtles, Van Morrison, ABBA and more</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_six your_top_mixes_first_line_six"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_six your_top_mixes_second_line_six"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/your_top-mixes6.png"
+                    alt="daily mix 5"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>David Bowie Mix</h3>
+                    <span class="your_top-mixes_span_six">50</span>
+                  </div>
+                  <p>Soft Cell, The Who and The Clash</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_seven your_top_mixes_first_line_seven"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_seven your_top_mixes_second_line_seven"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/your_top-mixes7.png"
+                    alt="daily mix 6"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>Upbeat Mix</h3>
+                    <span class="your_top-mixes_span_seven">50</span>
+                  </div>
+                  <p>Kylie Minogue, Charli XCX, Cage The Elephant and...</p>
+                </div>
+              </article>
+              <article class="home_main_box_made_for_you_card">
+                <div class="home_main_box_made_for_you_card_image_box">
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_first_line_eight your_top_mixes_first_line_eight"
+                  ></div>
+                  <div
+                    class="home_main_box_made_for_you_card_image_box_second_line_eight your_top_mixes_second_line_eight"
+                  ></div>
+                  <img
+                    src="./assets/home_images/img/your_top-mixes8.png"
+                    alt="daily mix 7"
+                  />
+                </div>
+                <div class="home_main_box_made_for_you_card_text_box">
+                  <div>
+                    <h3>60s Mix</h3>
+                    <span class="your_top-mixes_span_eight">50</span>
+                  </div>
+                  <p>Chuck Berry, Skeeter David, Van Morrison and...</p>
+                </div>
+              </article>
+            </div>
           </section>
         </main>
       </div>
-      <footer></footer>
+      <footer>
+        <img
+          src="./assets/home_images/img/1.png"
+          alt="icon"
+          class="footer_img"
+        />
+        <article>
+          <h3>Get Lucky (feat. Pharrell Williams and Nile Rodgers)</h3>
+          <p>Daft Punk</p>
+        </article>
+        <img
+          src="./assets/home_images/svg/add.svg"
+          alt="add"
+          class="footer_img_add"
+        />
+        <img
+          src="./assets/home_images/svg/play.svg"
+          alt="play"
+          class="footer_img_play"
+        />
+        <div class="footer_bottom_line">
+          <div class="footer_bottom_line_progress"></div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
