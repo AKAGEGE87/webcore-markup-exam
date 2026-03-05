@@ -219,6 +219,28 @@ header {
   padding-top: 8px;
 }
 
+.search-made-for-you-card {
+  position: relative;
+  width: 150px;
+  height: 90px;
+  background-color: #1E3264;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.search-made-for-you-card .search-made-for-you-img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: rotate(30deg) translate(100%, -10%);
+}
+.search-made-for-you-card h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 22px;
+}
+
 body {
   font-family: "Satoshi", sans-serif;
   width: 100vw;
