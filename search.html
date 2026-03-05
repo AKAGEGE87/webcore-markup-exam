@@ -8,7 +8,67 @@
       href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./scss/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="header_nav">
+          <ul>
+            <li>
+              <a href="./index.html">
+                <div>
+                  <img src="./assets/home_images/svg/home.svg" alt="home" />
+                </div>
+                <span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="./discover.html">
+                <div>
+                  <img src="./assets/home_images/svg/star.svg" alt="star" />
+                </div>
+                <span>Discover</span></a
+              >
+            </li>
+            <li>
+              <a href="./search.html">
+                <div>
+                  <img src="./assets/search_images/svg/search(1).svg" alt="search" />
+                </div>
+                <span>Search</span></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img
+                    src="./assets/home_images/svg/library.svg"
+                    alt="library"
+                  />
+                </div>
+                <span>Library</span></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <img src="./assets/home_images/svg/user.svg" alt="user" />
+                </div>
+                <span>Me</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="search-bar">
+        <input type="text" class="search-input" placeholder="What do you want to play? " />
+        <img class="search-icon" src="./assets/search_images/svg/search.svg" alt="search icon">
+        <img class="camera-icon" src="./assets/search_images/svg/camera.svg" alt="camera icon">
+      </section>
+      <section class="discover">
+        <h3>Browse all</h3>
+        <span>Discover</span>
+      </section>
+  </body>
 </html>
