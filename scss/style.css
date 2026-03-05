@@ -223,10 +223,10 @@ header {
   position: relative;
   width: 150px;
   height: 90px;
-  background-color: #1E3264;
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+  background-color: #1E3264;
 }
 .search-made-for-you-card .search-made-for-you-img {
   width: 90px;
