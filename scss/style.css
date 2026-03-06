@@ -210,8 +210,8 @@ header {
 }
 
 .discover {
-  color: #ffffff;
-  margin: 0 10px;
+  color: #e0e0e0;
+  margin: 0 20px;
   padding-top: 8px;
 }
 .discover span {
@@ -219,10 +219,16 @@ header {
   padding-top: 8px;
 }
 
+.search-cards-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
 .search-made-for-you-card {
   position: relative;
-  width: 150px;
-  height: 90px;
+  width: 170px;
+  height: 100px;
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
@@ -238,7 +244,161 @@ header {
   position: absolute;
   padding-left: 20px;
   padding-top: 20px;
-  font-size: 22px;
+  font-size: 24px;
+}
+
+.search-new-releases-card {
+  position: relative;
+  width: 170px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #BA5D07;
+}
+.search-new-releases-card .search-new-releases-card-img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: rotate(30deg) translate(100%, -10%);
+}
+.search-new-releases-card h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.search-spotify-classics-card {
+  position: relative;
+  width: 170px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #1E3264;
+}
+.search-spotify-classics-card .search-spotify-classics-card-img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: rotate(30deg) translate(100%, -10%);
+}
+.search-spotify-classics-card h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.search-charts-card {
+  position: relative;
+  width: 170px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #8D67AB;
+}
+.search-charts-card .search-charts-card-img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: rotate(30deg) translate(100%, -10%);
+}
+.search-charts-card h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.search-trending-card {
+  position: relative;
+  width: 170px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #B02897;
+}
+.search-trending-card .search-trending-card-img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: rotate(30deg) translate(100%, -10%);
+}
+.search-trending-card h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.search-discover-card {
+  position: relative;
+  width: 170px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #8D67AB;
+}
+.search-discover-card .search-discover-card-img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: rotate(30deg) translate(100%, -10%);
+}
+.search-discover-card h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.search-spotify-singles-card {
+  position: relative;
+  width: 170px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #777777;
+}
+.search-spotify-singles-card .search-spotify-singles-card-img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: rotate(30deg) translate(100%, -10%);
+}
+.search-spotify-singles-card h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.search-decades-card {
+  position: relative;
+  width: 170px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  background-color: #BA5D07;
+}
+.search-decades-card .search-decades-card-img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  transform: rotate(30deg) translate(100%, -10%);
+}
+.search-decades-card h3 {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 24px;
 }
 
 body {
