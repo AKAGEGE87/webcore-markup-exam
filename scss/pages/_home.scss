@@ -4,12 +4,10 @@
 @use "../layout" as *;
 
 .container {
-  // width: 390px;
+  max-width: 1771px;
   margin: auto;
   background-color: $color-bg-dark;
   position: relative;
-
-
 }
 
 header {
@@ -18,12 +16,16 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom,
-      rgba(17, 17, 17, 0.85) 0%,
-      rgba(17, 17, 17, 1) 43%);
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 0.85) 0%,
+    rgba(17, 17, 17, 1) 43%
+  );
   z-index: 1;
 
   @media (min-width: 790px) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     position: static;
     background: none;
   }
@@ -31,12 +33,25 @@ header {
 
 .header_nav ul {
   @include flex-space-between;
+  text-wrap: nowrap;
+  li {
+    max-width: 210px;
+    min-width: 0;
+    width: 100%;
+  }
 
   li a {
     @include flex-center;
     flex-direction: column;
+    width: 100%;
     gap: 8px;
     color: $color-text-alt;
+
+    @media (min-width: 790px) {
+      flex-direction: row;
+      justify-content: start;
+      padding: 4px;
+    }
 
     div {
       @include flex-center;
@@ -49,9 +64,106 @@ header {
       }
     }
   }
+  @media (min-width: 790px) {
+    justify-content: start;
+  }
 }
 
-.sidebar {
+.header_nav_library,
+.header_nav_me {
+  display: flex;
+}
+
+@media (min-width: 790px) {
+  .header_nav_library,
+  .header_nav_me {
+    display: none;
+  }
+}
+
+.my_library {
+  display: none;
+}
+
+@media (min-width: 790px) {
+  .my_library {
+    display: flex;
+    width: 240px;
+  }
+}
+
+.header_nav_second ul {
+  justify-content: flex-end;
+  display: none;
+  gap: 13px;
+  li a {
+    width: 41.41px;
+    height: 41.41px;
+    @include flex-center;
+  }
+
+  @media (min-width: 790px) {
+    display: flex;
+  }
+}
+
+.main_box {
+  display: flex;
+  gap: 7px;
+}
+
+.main_box_aside {
+  max-width: 259px;
+  width: 100%;
+  height: 100%;
+  padding: 11px 0 11px 11px;
+  @include flex-column;
+  gap: 11px;
+  display: none;
+  nav {
+    ul {
+      @include flex-column;
+      gap: 11px;
+
+      .aside_item {
+        @include flex-space-between;
+        color: $color-text-alt;
+        border-radius: $radius-lg;
+        cursor: pointer;
+
+        .aside_content {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .aside_img_box {
+            @include flex-center;
+            width: 40.41px;
+            height: 40.41px;
+            overflow: hidden;
+
+            img {
+              object-fit: cover;
+            }
+          }
+
+          p {
+            font-size: $font-size-base;
+            font-weight: $font-weight-regular;
+            letter-spacing: 3%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 790px) {
+  .main_box_aside {
+    display: flex;
+  }
+}
+.main_menu {
   @include flex-space-between;
   gap: 13px;
   flex-direction: column;
@@ -90,21 +202,29 @@ header {
     }
   }
 
-  .sidebar_section {
+  .main_menu_section {
     width: 100%;
     @include flex-space-between;
   }
 
-  .sidebar_section_menu {
+  .main_menu_section_menu {
     gap: 10px;
     @include flex-space-between;
 
     button {
       @include aside-btn;
     }
+    .active {
+      display: none;
+    }
+    @media (min-width: 790px) {
+      .active {
+        display: block;
+      }
+    }
   }
 
-  .sidebar_section_menu_img {
+  .main_menu_section_menu_img {
     width: 40.41px;
     height: 40.41px;
     overflow: hidden;
@@ -123,6 +243,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  overflow: hidden;
 }
 
 .home_main_box_catalog {
@@ -132,11 +253,14 @@ header {
   gap: 10px;
   padding-inline: 15px;
 
+  @media (min-width: 790px) {
+    display: none;
+  }
+
   .home_main_box_catalog_card {
     @include flex-space-between;
     @include catalog-card;
     gap: $spacing-sm;
-
     min-width: 0;
 
     img {
@@ -542,5 +666,14 @@ footer {
       right: 0;
       z-index: 2;
     }
+  }
+}
+
+@media (min-width: 790px) {
+  footer {
+    width: calc(100% - 263px);
+    bottom: 10px;
+    left: 263px;
+    transform: none;
   }
 }
