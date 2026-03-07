@@ -204,11 +204,57 @@ header {
 .search-bar .camera-icon {
   transform: translateX(-50%);
 }
+@media (min-width: 790px) {
+  .search-bar .camera-icon {
+    display: none;
+  }
+}
+
+@media (min-width: 790px) {
+  .container {
+    width: 100%;
+  }
+}
+.recent-searches {
+  margin: 10px 20px;
+}
+.recent-searches h3 {
+  display: none;
+  color: #e0e0e0;
+  margin: 10px 20px;
+  padding-top: 8px;
+}
+.recent-searches span {
+  color: #e0e0e0;
+  text-align: center;
+}
+.recent-searches .resent-searches-list {
+  display: none;
+  height: 300px;
+}
+.recent-searches .recent-searches-box {
+  margin: 10px 15px;
+}
+@media (min-width: 790px) {
+  .recent-searches .resent-searches-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .recent-searches h3 {
+    display: block;
+  }
+}
+
+.recent-searches-box {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
 
 .discover,
 .genres {
   color: #e0e0e0;
-  margin: 0 20px;
+  margin: 10px 20px;
   padding-top: 8px;
 }
 .discover span,
@@ -230,11 +276,24 @@ header {
   position: absolute;
   transform: rotate(30deg) translate(100%, -10%);
 }
+@media (min-width: 790px) {
+  .search-card-imgs {
+    width: 100px;
+    height: 100px;
+    transform: rotate(30deg) translate(95%, 20%);
+  }
+}
 
 .search-cards-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
+}
+@media (min-width: 790px) {
+  .search-cards-box {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .search-made-for-you-card {
@@ -244,6 +303,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-made-for-you-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-made-for-you-card {
   background-color: #1E3264;
 }
 
@@ -254,6 +322,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-new-releases-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-new-releases-card {
   background-color: #BA5D07;
 }
 
@@ -264,6 +341,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-spotify-classics-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-spotify-classics-card {
   background-color: #1E3264;
 }
 
@@ -274,6 +360,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-charts-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-charts-card {
   background-color: #8D67AB;
 }
 
@@ -284,6 +379,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-trending-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-trending-card {
   background-color: #B02897;
 }
 
@@ -294,6 +398,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-discover-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-discover-card {
   background-color: #8D67AB;
 }
 
@@ -304,6 +417,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-spotify-singles-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-spotify-singles-card {
   background-color: #777777;
 }
 
@@ -314,6 +436,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-decades-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-decades-card {
   background-color: #BA5D07;
 }
 
@@ -324,6 +455,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-pop-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-pop-card {
   background-color: #148A08;
 }
 
@@ -334,6 +474,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-country-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-country-card {
   background-color: #D84000;
 }
 
@@ -344,6 +493,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-hip-hop-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-hip-hop-card {
   background-color: #503750;
 }
 
@@ -354,6 +512,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-rock-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-rock-card {
   background-color: #006450;
 }
 
@@ -364,6 +531,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-indie-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-indie-card {
   background-color: #E91429;
 }
 
@@ -374,6 +550,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-punk-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-punk-card {
   background-color: #1E3264;
 }
 
@@ -384,6 +569,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-metal-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-metal-card {
   background-color: #E91429;
 }
 
@@ -394,6 +588,15 @@ header {
   border-radius: 10px;
   overflow: hidden;
   margin-top: 10px;
+}
+@media (min-width: 790px) {
+  .search-instrumental-card {
+    width: 160px;
+    height: 160px;
+    margin-right: 15px;
+  }
+}
+.search-instrumental-card {
   background-color: #537AA1;
 }
 
