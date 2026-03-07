@@ -3,7 +3,11 @@
 @use "../components" as *;
 @use "../layout" as *;
 
-//search bar
+
+
+.header{
+    
+}
 .search-bar {
     @include flex-space-between;
     
@@ -26,10 +30,7 @@
 }
 }
 
-//main section
-
-.discover,
-.genres{
+.discover{
     color: $color-text-btn;
     margin: 0 20px;
     padding-top: 8px;
@@ -105,38 +106,38 @@ span{
 
 }
 
-.search-hip-hop-card{
+.search-decades-card{
     @include search-card;
-    background-color: #503750;
+    background-color: #BA5D07;
 
 }
 
-.search-rock-card{
+.search-decades-card{
     @include search-card;
-    background-color: #006450;
+    background-color: #BA5D07;
 
 }
 
-.search-indie-card{
+.search-decades-card{
     @include search-card;
-    background-color: #E91429;
+    background-color: #BA5D07;
 
 }
 
-.search-punk-card{
+.search-decades-card{
     @include search-card;
-    background-color: #1E3264;
+    background-color: #BA5D07;
 
 }
 
-.search-metal-card{
+.search-decades-card{
     @include search-card;
-    background-color: #E91429;
+    background-color: #BA5D07;
 
 }
 
-.search-instrumental-card{
+.search-decades-card{
     @include search-card;
-    background-color: #537AA1;
+    background-color: #BA5D07;
 
 }
