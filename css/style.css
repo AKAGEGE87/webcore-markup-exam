@@ -182,10 +182,19 @@ header {
   border-radius: 6.02px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .search-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 790px) {
+  .search-bar {
+    display: none;
+  }
 }
 .search-bar .search-input {
   width: 300px;
@@ -204,15 +213,23 @@ header {
 .search-bar .camera-icon {
   transform: translateX(-50%);
 }
-@media (min-width: 790px) {
-  .search-bar .camera-icon {
-    display: none;
-  }
-}
 
 @media (min-width: 790px) {
+  .search-main-box {
+    border-radius: 10px;
+    border: solid 1px #E0E0E0;
+    min-width: 0;
+    overflow: hidden;
+  }
   .container {
     width: 100%;
+  }
+  .main-box {
+    display: flex;
+  }
+  .main-box .aside-content {
+    width: 259px;
+    height: 900px;
   }
 }
 .recent-searches {
@@ -256,11 +273,24 @@ header {
   color: #e0e0e0;
   margin: 10px 20px;
   padding-top: 8px;
+  position: relative;
 }
 .discover span,
 .genres span {
   display: inline-block;
   padding-top: 8px;
+}
+.discover .arrows,
+.genres .arrows {
+  display: none;
+}
+@media (min-width: 790px) {
+  .discover .arrows,
+  .genres .arrows {
+    display: inline;
+    position: absolute;
+    right: 0;
+  }
 }
 
 .search-card-headers {
@@ -292,7 +322,12 @@ header {
 @media (min-width: 790px) {
   .search-cards-box {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .search-cards-box article {
+    flex-shrink: 0;
   }
 }
 
