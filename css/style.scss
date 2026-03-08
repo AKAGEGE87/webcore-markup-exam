@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 390px;
+  margin: auto;
+  background-color: #111111;
+}
+
+header {
+  padding: 16px 28.56px 24px 27.79px;
+}
+
+.header_nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_nav ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  color: #898989;
+}
+.header_nav ul li a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40.41px;
+  height: 40.41px;
+  overflow: hidden;
+}
+.header_nav ul li a div img {
+  object-fit: cover;
+}
+
+.main_box {
+  padding: 15px;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 9px;
+  margin-bottom: 13px;
+}
+.sidebar .sidebar_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar .sidebar_section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  color: #e0e0e0;
+  background-color: #202020;
+  font-size: 12px;
+  border-radius: 8px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  cursor: pointer;
+}
+.sidebar article {
+  width: 41.41px;
+  height: 41.41px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar article img {
+  object-fit: cover;
+}
+
+.home_main_box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home_main_box_catalog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+.home_main_box_catalog .home_main_box_catalog_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #202020;
+  border-radius: 10px;
+  color: #898989;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  gap: 8px;
+  min-width: 0;
+}
+.home_main_box_catalog .home_main_box_catalog_card img {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.home_main_box_catalog .home_main_box_catalog_card .text_box {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.home_main_box_catalog .home_main_box_catalog_card .text_box h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 0;
+  color: #e0e0e0;
+  font-weight: 700;
+}
+.home_main_box_catalog .home_main_box_catalog_card .text_box p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.home_main_box_made_for_you {
+  display: flex;
+  gap: 9px;
+}
+.home_main_box_made_for_you .home_main_box_made_for_you_card {
+  max-width: 141.06px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.home_main_box_made_for_you .home_main_box_made_for_you_card .home_main_box_made_for_you_card_image_box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.home_main_box_made_for_you .home_main_box_made_for_you_card .home_main_box_made_for_you_card_image_box .home_main_box_made_for_you_card_image_box_first_line {
+  padding-inline: 15.35px;
+  border-radius: 6.02px 6.02px 0 0;
+  height: 2.49px;
+  background-color: rgba(206, 110, 153, 0.1450980392);
+}
+.home_main_box_made_for_you .home_main_box_made_for_you_card .home_main_box_made_for_you_card_image_box .home_main_box_made_for_you_card_image_box_second_line {
+  padding-inline: 6.64px;
+  border-radius: 6.02px 6.02px 0 0;
+  height: 4.98px;
+  background-color: #ce6e9a;
+}
+.home_main_box_made_for_you .home_main_box_made_for_you_card .home_main_box_made_for_you_card_image_box img {
+  width: 146.01px;
+  height: 146.01px;
+  object-fit: cover;
+  border-radius: 6.02px;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.scss.map */

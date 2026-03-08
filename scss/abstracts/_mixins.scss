@@ -44,3 +44,17 @@
   text-overflow: ellipsis;
   min-width: 0;
 }
+
+@mixin home_main_box_first_line {
+  width: calc(100% - 15.35px * 2);
+  margin-inline: auto;
+  border-radius: 6.02px 6.02px 0 0;
+  height: 2.49px;
+}
+
+@mixin home_main_box_second_line {
+  width: calc(100% - 6.64px * 2);
+  margin-inline: auto;
+  border-radius: 6.02px 6.02px 0 0;
+  height: 4.98px;
+}
