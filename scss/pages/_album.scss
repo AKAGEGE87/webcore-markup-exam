@@ -1,0 +1,22 @@
+@use "../abstracts" as *;
+@use "../base" as *;
+@use "../components" as *;
+@use "../layout" as *;
+
+.album_main_box {
+  background: linear-gradient(0deg, #060606 0%, #333842 100%);
+  padding: 22px 50px 0 37px;
+  width: calc(100% - 140px);
+  margin: 0 auto;
+}
+
+.album_title {
+  @include flex-column;
+  gap: 30px;
+  h1 {
+    font-size: 36px;
+    font-weight: $font-weight-bold;
+    letter-spacing: 3%;
+    color: $color-text-btn;
+  }
+}
