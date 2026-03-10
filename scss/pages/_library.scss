@@ -3,10 +3,18 @@
 @use "../components" as *;
 @use "../layout" as *;
 
+
+.main_box_aside{
+    position: sticky;
+    top:10px;
+}
+
 .library-aside {
     background-color: $color-bg-dark;
     margin:10px;
     border-radius: 10px;
+    
+    height: 100%;
 }
 
 @media(min-width:790px){
@@ -68,12 +76,15 @@
 .library-menu{
      list-style: none;
      color: white;
-     
+     margin-bottom: 200px;
     .library-menu-item{
      border-bottom: 1px solid #333;
      position: relative;
-     
+     @media(min-width: 790px){
+        border:none;
+     }
     }
+     
     .menu-checkbox{
         display: none;
     }
@@ -86,10 +97,73 @@
         cursor: pointer;
         font-weight: bold;
         position: relative;
+        @include flex-row;
+        @media(min-width:790px){
+            display: none;
+        }
+    .library-expand{
+        margin-left:auto;
+        transition: transform 0.3s ease;
+     }
+    }
+    .menu-checkbox:checked ~ .menu-label .library-expand {
+         transform: rotate(90deg); 
     }
     .library-submenu{
+        list-style:none;
         max-height: 0; 
         overflow: hidden;
         transition: max-height 0.3s ease-out;
+        margin-top:20px;
+        @include flex-row;
+        gap:20px;
+        flex-wrap: wrap;
+        
+        @media(min-width: 790px){
+            max-height: none; 
+            overflow: visible;
+        }
+    }
+}
+
+.library-main-content{
+    .pins{
+        display: none;
+        margin-top:10px;
+        color: white;
+         @media(min-width: 790px){
+            @include flex-row;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .playlist-covers{
+            width:140px;
+        }
+        .artist-box{
+            text-align: center;
+        }
+        .pinned{
+            position: absolute;
+            transform: translateX(-70%);
+            width:45px;
+            height: 45px;
+        }
+        .pinned-item-box{
+            width: 140px;
+        }
+        .pins-text-box div{
+            @include flex-row;
+        }
+        h3{
+            display: inline;
+            opacity: 75%;
+        }
+        span{
+            margin-left: auto;
+        }
+        p{
+         color: $color-text-alt;
+        }
+       
     }
 }

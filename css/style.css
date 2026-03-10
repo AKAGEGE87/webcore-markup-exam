@@ -1313,10 +1313,16 @@ footer {
   background-color: #537AA1;
 }
 
+.main_box_aside {
+  position: sticky;
+  top: 10px;
+}
+
 .library-aside {
   background-color: #111111;
   margin: 10px;
   border-radius: 10px;
+  height: 100%;
 }
 
 @media (min-width: 790px) {
@@ -1385,10 +1391,16 @@ footer {
 .library-menu {
   list-style: none;
   color: white;
+  margin-bottom: 200px;
 }
 .library-menu .library-menu-item {
   border-bottom: 1px solid #333;
   position: relative;
+}
+@media (min-width: 790px) {
+  .library-menu .library-menu-item {
+    border: none;
+  }
 }
 .library-menu .menu-checkbox {
   display: none;
@@ -1402,11 +1414,80 @@ footer {
   cursor: pointer;
   font-weight: bold;
   position: relative;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 790px) {
+  .library-menu .menu-label {
+    display: none;
+  }
+}
+.library-menu .menu-label .library-expand {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+.library-menu .menu-checkbox:checked ~ .menu-label .library-expand {
+  transform: rotate(90deg);
 }
 .library-menu .library-submenu {
+  list-style: none;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+@media (min-width: 790px) {
+  .library-menu .library-submenu {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+.library-main-content .pins {
+  display: none;
+  margin-top: 10px;
+  color: white;
+}
+@media (min-width: 790px) {
+  .library-main-content .pins {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.library-main-content .pins .playlist-covers {
+  width: 140px;
+}
+.library-main-content .pins .artist-box {
+  text-align: center;
+}
+.library-main-content .pins .pinned {
+  position: absolute;
+  transform: translateX(-70%);
+  width: 45px;
+  height: 45px;
+}
+.library-main-content .pins .pinned-item-box {
+  width: 140px;
+}
+.library-main-content .pins .pins-text-box div {
+  display: flex;
+  flex-direction: row;
+}
+.library-main-content .pins h3 {
+  display: inline;
+  opacity: 75%;
+}
+.library-main-content .pins span {
+  margin-left: auto;
+}
+.library-main-content .pins p {
+  color: #898989;
 }
 
 body {
