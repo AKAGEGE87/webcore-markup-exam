@@ -649,7 +649,7 @@ footer {
           width: 38.02px;
           height: 38.02px;
           object-fit: cover;
-          background-color: #1ed760;
+          background-color: $color-bg-circle;
           border-radius: $radius-pill;
           @include flex-center;
         }
@@ -786,15 +786,57 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     background-clip: content-box;
-    .footer_box {
-      // width: calc(100% - 263px);
+  }
+}
 
-      // right: 0;
+//album page
 
-      // left: 263px;
-      // transform: none;
+.album_main_box {
+  @include flex-space-between;
+  align-items: start;
+  .album_left_section {
+    .album_title {
+      @include flex-column;
+      gap: 20px;
+      h1 {
+        font-size: $font-size-36;
+        font-weight: $font-weight-bold;
+        letter-spacing: 3%;
+        text-wrap: nowrap;
+      }
+      p {
+        @include flex-center;
+        justify-content: start;
+        gap: 10px;
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        letter-spacing: 3%;
+        color: $color-text-alt;
+        cursor: pointer;
 
-      // width: 100%; // ან მობილურის მსგავსი calc
+        .album_title_text_white {
+          color: $color-text-btn;
+        }
+      }
+    }
+    .icons_big_box {
+      @include flex-space-between;
+      gap: 56.71px;
+      .icons_boxs {
+        @include flex-space-between;
+        gap: 14px;
+        .icon_box {
+          width: 40.41px;
+          height: 40.41px;
+          object-fit: cover;
+          cursor: pointer;
+          @include flex-center;
+        }
+        .circle {
+          background-color: $color-bg-circle;
+          border-radius: $radius-pill;
+        }
+      }
     }
   }
 }
