@@ -840,3 +840,111 @@ footer {
     }
   }
 }
+
+// .album_table {
+//   width: 100%;
+//   border-collapse: collapse;
+//   margin-top: 30px;
+//   color: $color-text-alt;
+//   thead {
+//     border-bottom: 1px solid #898989;
+//     padding: 12px;
+//     tr {
+//       th {
+//         font-size: $font-size-base;
+//         font-weight: $font-weight-regular;
+//         letter-spacing: 3%;
+//       }
+//     }
+//   }
+
+//   tbody {
+//     tr {
+//       .title {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 4px;
+//         color: $color-text-btn;
+//         span {
+//           color: $color-text-alt;
+//         }
+//       }
+
+//       .table_img_box {
+//         width: 40.41px;
+//         height: 40.41px;
+//         object-fit: cover;
+//         cursor: pointer;
+//         @include flex-center;
+//       }
+//     }
+//   }
+// }
+
+.album_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  color: $color-text-alt;
+
+  thead {
+    tr {
+      th {
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        letter-spacing: 3%;
+        text-align: left;
+        padding: 12px;
+        border-bottom: 1px solid rgba(137, 137, 137, 0.3); // უფრო რბილი ხაზი
+
+        &.col_duration {
+          text-align: right; // დროის სათაური მარჯვნივ
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      // სტრიქონზე მაუსის მიტანის ეფექტი
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+
+      td {
+        padding: 12px;
+        vertical-align: middle;
+
+        &.title {
+          // აქ flex-ს ვიყენებთ ტექსტების ვერტიკალურად დასალაგებლად
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          color: $color-text-btn; // თეთრი ფერი სიმღერისთვის
+
+          span {
+            color: $color-text-alt; // ნაცრისფერი შემსრულებლისთვის
+            font-size: 0.9em;
+          }
+        }
+
+        &.music_duration {
+          text-align: right; // ციფრები გასწორდეს მარჯვნივ
+        }
+
+        &.table_img_box {
+          width: 40px;
+          cursor: pointer;
+
+          img {
+            width: 18px;
+            height: 18px;
+            @include flex-center;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

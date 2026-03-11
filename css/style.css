@@ -901,6 +901,57 @@ footer .footer_box .footer_right_section .footer_right_section_image_box_line {
   border-radius: 50%;
 }
 
+.album_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  color: #898989;
+}
+.album_table thead tr th {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid rgba(137, 137, 137, 0.3);
+}
+.album_table thead tr th.col_duration {
+  text-align: right;
+}
+.album_table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.album_table tbody tr td {
+  padding: 12px;
+  vertical-align: middle;
+}
+.album_table tbody tr td.title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #e0e0e0;
+}
+.album_table tbody tr td.title span {
+  color: #898989;
+  font-size: 0.9em;
+}
+.album_table tbody tr td.music_duration {
+  text-align: right;
+}
+.album_table tbody tr td.table_img_box {
+  width: 40px;
+  cursor: pointer;
+}
+.album_table tbody tr td.table_img_box img {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}
+
 body {
   overflow-x: hidden;
 }
