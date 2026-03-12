@@ -1023,6 +1023,15 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 790px) {
+  .header_nav ul .header-search {
+    background-color: #202020;
+    border-radius: 10px;
+  }
+  .header_nav ul .header-search span {
+    opacity: 50%;
+  }
+}
 .search-bar {
   display: flex;
   flex-direction: row;
@@ -1054,7 +1063,7 @@ body {
 @media (min-width: 790px) {
   .search-main-box {
     border-radius: 10px;
-    border: solid 1px #E0E0E0;
+    border: solid 1px #323232;
     min-width: 0;
     overflow: hidden;
   }
@@ -1066,7 +1075,7 @@ body {
     justify-content: center;
   }
   .main-box .aside-content {
-    width: 259px;
+    width: 250px;
     height: 900px;
   }
 }

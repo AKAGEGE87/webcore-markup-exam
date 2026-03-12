@@ -7,6 +7,17 @@ body{
     overflow-x: hidden;
 }
 
+
+//header search 
+@media(min-width:790px){
+.header_nav ul .header-search{
+    background-color: $color-bg-btn;
+    border-radius: 10px;
+    span{
+        opacity: 50%;
+    }
+}   
+}
 //search bar
 .search-bar {
     @include flex-row;
@@ -39,7 +50,7 @@ body{
 @media(min-width: 790px){
     .search-main-box{
     border-radius:10px;
-    border: solid 1px #E0E0E0;
+    border: solid 1px #323232;
     min-width: 0;        
     overflow: hidden; 
     }
@@ -50,7 +61,7 @@ body{
         display: flex;
         justify-content: center;
     .aside-content{
-        width:259px;
+        width:250px;
         height: 900px;
     }
     }
