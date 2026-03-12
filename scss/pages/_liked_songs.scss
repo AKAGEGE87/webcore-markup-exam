@@ -24,6 +24,8 @@
     grid-template-columns: repeat(3,1fr);
     color: $color-text-alt;
     margin-bottom: 20px;
+    padding: 5px;
+
 }
 .table-col-1{
     @include flex-row;
@@ -39,4 +41,25 @@
 .table-col-3{
     @include flex-row;
     align-items: center;
+    gap:15px;
+}
+
+//animations and hovers
+.liked-song-icon{
+    opacity: 0;
+    
+}
+.table-row:hover .liked-song-icon{
+       animation: slide 0.3s ease-in-out forwards;
+}
+.table-row:hover{
+    background-color: $color-bg-btn;
+    border-radius: 10px;
+}
+@keyframes slide {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
 }

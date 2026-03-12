@@ -1390,6 +1390,10 @@ footer {
   width: 100%;
 }
 
+.library-main-content {
+  height: 100vh;
+  overflow-y: auto;
+}
 @media (min-width: 790px) {
   .library-main-content {
     border: 1px solid #202020;
@@ -1441,12 +1445,12 @@ footer {
 .library-main-content .library-menu .library-submenu {
   list-style: none;
   max-height: 0;
-  overflow: hidden;
+  overflow-y: auto;
   transition: max-height 0.3s ease-out;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 @media (min-width: 790px) {
@@ -1459,6 +1463,7 @@ footer {
   display: none;
   margin-top: 10px;
   color: white;
+  position: relative;
 }
 @media (min-width: 790px) {
   .library-main-content .pins {
@@ -1508,6 +1513,37 @@ footer {
   color: #898989;
 }
 
+@media (min-width: 790px) {
+  .library-items {
+    position: relative;
+  }
+  .library-items::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../../assets/library_images/svg/play-icon.svg);
+    background-size: cover;
+    background-position: center;
+    transform: translate(-35px, 0);
+    opacity: 0;
+  }
+  .library-items:hover::after {
+    animation: slide-in 0.3s ease-in-out forwards;
+  }
+}
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translate(-35px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-35px, -80px);
+  }
+}
 .filter-bar1 ul {
   justify-content: flex-end;
   position: relative;
@@ -1527,6 +1563,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   color: #898989;
   margin-bottom: 20px;
+  padding: 5px;
 }
 
 .table-col-1 {
@@ -1546,8 +1583,30 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 15px;
 }
 
+.liked-song-icon {
+  opacity: 0;
+}
+
+.table-row:hover .liked-song-icon {
+  animation: slide 0.3s ease-in-out forwards;
+}
+
+.table-row:hover {
+  background-color: #202020;
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Satoshi", sans-serif;
   width: 100vw;
