@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Liked Songs</title>
-
+    <title>Album</title>
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap"
       rel="stylesheet"
@@ -243,164 +241,282 @@
             </ul>
           </nav>
         </aside>
-
-        <main class="album_main_box library-main-content">
-          <div class="album_title">
-            <h1>Liked songs</h1>
-          </div>
-          <nav class="filter-bar filter-bar1">
-            <ul>
-              <li class="filter-bar-item filter-item-1">
-                <img  class="layout-1 active-button" src="./assets/library_images/svg/layout-1.svg" alt="layout icon">
-              </li>
-               <li class="filter-bar-item filter-item-1">
-                <img  class="layout-2" src="./assets/library_images/svg/layout-2.svg" alt="layout icon">
-              </li>
-               <li class="filter-bar-item recents-item">
-                <img  class="recents" src="./assets/library_images/svg/recents.svg" alt="recents icon">
-                <span>Recent</span>
-              </li>
-               <li class="filter-bar-item">
-                <img  class="group-items" src="./assets/library_images/svg/group.svg" alt="group icon">
-                <span>Group</span>
-              </li>
-               <li class="filter-bar-item filter-item-1">
-                <img  class="search-icon" src="./assets/library_images/svg/search-icon.svg" alt="search icon">
-              </li>
-               <li class="filter-bar-item left-item filter-item-1">
-                <img  class="plus-icon" src="./assets/library_images/svg/plus-icon.svg" alt="plus icon">
-              </li>
-            </ul>
-          </nav>
-          <section class="liked-songs-table-container">
-              <article class="table-row">
-                  <span># Title</span>
-                  <span>Album</span>
-                  <span>Duration</span>
-              </article>
-              <article class="table-row">
-                  <div class="table-col-1">
-                  <span>1</span>
-                  <img src="./assets/library_images/img/liked-song-1.png" alt="song cover">
-                  <div>
-                  <h3>Get Lucky</h3>
-                  <span>Daft Punk</span>
+        <div class="album_main_box">
+          <section class="album_left_section">
+            <div class="album_title">
+              <h1>Random Access Memories</h1>
+              <p>
+                <img
+                  src="./assets/album_images/song_icon.svg"
+                  alt="song_icon"
+                />
+                <span class="album_title_text album_title_text_white"
+                  >Daft Punk</span
+                >
+                <img src="./assets/album_images/dot.svg" alt="dot" />
+                <span class="album_title_text">2013</span>
+                <img src="./assets/album_images/dot.svg" alt="dot" />
+                <span class="album_title_text">13 songs</span>
+                <img src="./assets/album_images/dot.svg" alt="dot" />
+                <span class="album_title_text">1 hr 14 min</span>
+              </p>
+              <div class="icons_big_box">
+                <div class="icons_boxs">
+                  <div class="circle icon_box">
+                    <img src="./assets/album_images/play.svg" alt="play" />
                   </div>
-              </div>
-              <div class="table-col-2">
-                  <span>Random Access Memories</span>
-              </div>
-              <div class="table-col-3">
-                  <span>4:35</span>
-                  <img class="liked-song-icon" src="./assets/library_images/svg/liked-song-icon.svg" alt="heart icon">
-              </div>
-              </article>
-              <article class="table-row">
-                  <div class="table-col-1">
-                  <span>2</span>
-                  <img src="./assets/library_images/img/liked-song-1.png" alt="song cover">
-                  <div>
-                  <h3>Get Lucky</h3>
-                  <span>Daft Punk</span>
+                  <div class="icon_box">
+                    <img src="./assets/album_images/messy.svg" alt="messy" />
                   </div>
-              </div>
-              <div class="table-col-2">
-                  <span>Random Access Memories</span>
-              </div>
-              <div class="table-col-3">
-                  <span>4:35</span>
-                  <img class="liked-song-icon" src="./assets/library_images/svg/liked-song-icon.svg" alt="heart icon">
-              </div>
-              </article>
-              <article class="table-row">
-                  <div class="table-col-1">
-                  <span>3</span>
-                  <img src="./assets/library_images/img/liked-song-1.png" alt="song cover">
-                  <div>
-                  <h3>Get Lucky</h3>
-                  <span>Daft Punk</span>
+                  <div class="icon_box">
+                    <img src="./assets/album_images/plus.svg" alt="plus" />
                   </div>
-              </div>
-              <div class="table-col-2">
-                  <span>Random Access Memories</span>
-              </div>
-              <div class="table-col-3">
-                  <span>4:35</span>
-                  <img class="liked-song-icon" src="./assets/library_images/svg/liked-song-icon.svg" alt="heart icon">
-              </div>
-              </article>
-              <article class="table-row">
-                  <div class="table-col-1">
-                  <span>4</span>
-                  <img src="./assets/library_images/img/liked-song-1.png" alt="song cover">
-                  <div>
-                  <h3>Get Lucky</h3>
-                  <span>Daft Punk</span>
+                  <div class="icon_box">
+                    <img src="./assets/album_images/list.svg" alt="list" />
                   </div>
-              </div>
-              <div class="table-col-2">
-                  <span>Random Access Memories</span>
-              </div>
-              <div class="table-col-3">
-                  <span>4:35</span>
-                  <img class="liked-song-icon" src="./assets/library_images/svg/liked-song-icon.svg" alt="heart icon">
-              </div>
-              </article>
-              <article class="table-row">
-                  <div class="table-col-1">
-                  <span>5</span>
-                  <img src="./assets/library_images/img/liked-song-1.png" alt="song cover">
-                  <div>
-                  <h3>Get Lucky</h3>
-                  <span>Daft Punk</span>
+                  <div class="icon_box">
+                    <img
+                      src="./assets/album_images/download.svg"
+                      alt="download"
+                    />
                   </div>
-              </div>
-              <div class="table-col-2">
-                  <span>Random Access Memories</span>
-              </div>
-              <div class="table-col-3">
-                  <span>4:35</span>
-                  <img class="liked-song-icon" src="./assets/library_images/svg/liked-song-icon.svg" alt="heart icon">
-              </div>
-              </article>
-              <article class="table-row">
-                  <div class="table-col-1">
-                  <span>6</span>
-                  <img src="./assets/library_images/img/liked-song-1.png" alt="song cover">
-                  <div>
-                  <h3>Get Lucky</h3>
-                  <span>Daft Punk</span>
+                  <div class="icon_box">
+                    <img src="./assets/album_images/upload.svg" alt="upload" />
                   </div>
-              </div>
-              <div class="table-col-2">
-                  <span>Random Access Memories</span>
-              </div>
-              <div class="table-col-3">
-                  <span>4:35</span>
-                  <img class="liked-song-icon" src="./assets/library_images/svg/liked-song-icon.svg" alt="heart icon">
-              </div>
-              </article>
-              <article class="table-row">
-                  <div class="table-col-1">
-                  <span>7</span>
-                  <img src="./assets/library_images/img/liked-song-1.png" alt="song cover">
-                  <div>
-                  <h3>Get Lucky</h3>
-                  <span>Daft Punk</span>
+                  <div class="icon_box">
+                    <img
+                      src="./assets/album_images/dots.svg"
+                      alt="three_dots"
+                    />
                   </div>
+                </div>
+                <img src="./assets/album_images/search.svg" alt="heart" />
               </div>
-              <div class="table-col-2">
-                  <span>Random Access Memories</span>
-              </div>
-              <div class="table-col-3">
-                  <span>4:35</span>
-                  <img class="liked-song-icon" src="./assets/library_images/svg/liked-song-icon.svg" alt="heart icon">
-              </div>
-              </article>
+            </div>
+            <table class="album_table">
+              <thead>
+                <tr>
+                  <th class="col_number">#</th>
+                  <th class="col_title">title</th>
+                  <th class="col_duration">duration</th>
+                  <th class="col_heart"></th>
+                  <th class="col_free"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Give Life Back to Music
+                      <span class="artist_name">Daft Punk</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">4:35</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td class="title">
+                    <div class="title_box">
+                      The Game of Love
+                      <span class="artist_name">Daft Punk</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">5:22</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Giorgio by Moroder
+                      <span class="artist_name">Daft Punk</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">9:04</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Within <span class="artist_name">Daft Punk</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">3:48</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Instant Crush (feat. Julian Casablancas)
+                      <span class="artist_name"
+                        >Daft Punk, Julian Casablancas</span
+                      >
+                    </div>
+                  </td>
+                  <td class="music_duration">5:37</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Lose Yourself to Dance (feat. Pharrell Williams)
+                      <span class="artist_name"
+                        >Daft Punk, Pharrell Williams</span
+                      >
+                    </div>
+                  </td>
+                  <td class="music_duration">5:53</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Touch (feat. Paul Williams)
+                      <span class="artist_name">Daft Punk, Paul Williams</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">8:18</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Get Lucky (feat. Pharrell Williams and Nile Rodgers)
+                      <span class="artist_name"
+                        >Daft Punk, Pharrell Williams, Nile Rodgers</span
+                      >
+                    </div>
+                  </td>
+                  <td class="music_duration">6:09</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Beyond <span class="artist_name">Daft Punk</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">4:50</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Motherboard <span class="artist_name">Daft Punk</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">5:41</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Fragments of Time (feat. Todd Edwards)
+                      <span class="artist_name">Daft Punk, Todd Edwards</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">4:39</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td class="title">
+                    <div class="title_box">
+                      SDoin’ it Right (feat. Panda Bear)
+                      <span class="artist_name">Daft Punk, Panda Bear</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">4:11</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td class="title">
+                    <div class="title_box">
+                      Contact <span class="artist_name">Daft Punk</span>
+                    </div>
+                  </td>
+                  <td class="music_duration">6:23</td>
+                  <td class="table_img_box">
+                    <img src="./assets/album_images/heart.svg" alt="" />
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
           </section>
-        </main>
+          <section class="album_right_section">
+            <img src="./assets/album_images/png/hero.png" alt="hero" />
+            <article class="album_right_section_button_box">
+              <button>Funk</button>
+              <button>Electronic music</button>
+              <button>Disco</button>
+              <button>Soft Rock</button>
+              <button>Progressive Pop</button>
+            </article>
+            <article class="album_right_section_artist_box">
+              <div>
+                <img src="./assets/album_images/png/1.png" alt="" />
+                <h3>Daft Punk</h3>
+              </div>
+              <div>
+                <img src="./assets/album_images/png/2.png" alt="" />
+                <h3>Pharrell Williams</h3>
+              </div>
+              <div>
+                <img src="./assets/album_images/png/3.png" alt="" />
+                <h3>Nile Rodgers</h3>
+              </div>
+            </article>
+          </section>
+        </div>
       </div>
-
       <footer>
         <div class="footer_box">
           <section class="footer_left_section">
