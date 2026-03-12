@@ -4,7 +4,9 @@
 @use "../layout" as *;
 
 .container {
+  width: 100%;
   max-width: 1771px;
+  min-height: 100vh;
   margin: auto;
   background-color: $color-bg-dark;
   position: relative;
@@ -135,6 +137,7 @@ header {
           display: flex;
           align-items: center;
           gap: 10px;
+          color: $color-text-alt;
 
           .aside_img_box {
             @include flex-center;
@@ -610,172 +613,370 @@ header {
 }
 
 footer {
-  width: calc(100% - 15px);
-  margin-inline: auto;
-  background-color: $color-bg-footer;
-  padding: 8px 10.59px 10px 8px;
-  border-radius: $radius-lg;
-  @include flex-space-between;
-  gap: 8px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: fixed;
+  width: 100%;
+  max-width: 1771px;
   overflow: hidden;
   z-index: 1;
   bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-inline: auto;
+  background-color: transparent;
+  // width: calc(100% - 15px);
+  .footer_box {
+    background-color: $color-bg-footer;
+    padding: 8px 10.59px 10px 8px;
+    border-radius: $radius-lg;
+    @include flex-space-between;
+    gap: 8px;
 
-  .footer_left_section {
-    display: none;
-    align-items: center;
-    gap: 10px;
+    .footer_left_section {
+      display: none;
+      align-items: center;
+      gap: 10px;
 
-    @media (min-width: 790px) {
-      display: flex;
+      @media (min-width: 790px) {
+        display: flex;
+      }
+
+      .footer_left_section_article {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .footer_left_section_play {
+          width: 38.02px;
+          height: 38.02px;
+          object-fit: cover;
+          background-color: $color-bg-circle;
+          border-radius: $radius-pill;
+          @include flex-center;
+        }
+
+        .footer_left_section_volume_box {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+          @include flex-center;
+        }
+      }
     }
 
-    .footer_left_section_article {
+    .footer_img {
+      width: 43px;
+      height: 43px;
+      object-fit: cover;
+      border-radius: $radius-3;
+    }
+
+    .footer_center_section {
       display: flex;
       align-items: center;
-      gap: 5px;
+      gap: 10px;
+    }
 
-      .footer_left_section_play {
-        width: 38.02px;
-        height: 38.02px;
-        object-fit: cover;
-        background-color: #1ed760;
-        border-radius: $radius-pill;
-        @include flex-center;
+    .footer_center_section_text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+
+      h3 {
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        letter-spacing: 3%;
+        background: linear-gradient(to right, #dbdbdb 55%, #333842 66%);
+        text-wrap: nowrap;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
       }
 
-      .footer_left_section_volume_box {
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-        @include flex-center;
+      p {
+        color: $color-text-alt;
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        letter-spacing: 3%;
       }
     }
-  }
 
-  .footer_img {
-    width: 43px;
-    height: 43px;
-    object-fit: cover;
-    border-radius: $radius-3;
-  }
-
-  .footer_center_section {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .footer_center_section_text {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-
-    h3 {
-      font-size: $font-size-base;
-      font-weight: $font-weight-regular;
-      letter-spacing: 3%;
-      background: linear-gradient(to right, #dbdbdb 55%, #333842 66%);
-      text-wrap: nowrap;
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      display: inline-block;
+    .footer_img_add {
+      position: absolute;
+      right: 63px;
+      bottom: 20px;
+      width: 20px;
+      height: 23px;
+      object-fit: cover;
     }
 
-    p {
-      color: $color-text-alt;
-      font-size: $font-size-base;
-      font-weight: $font-weight-regular;
-      letter-spacing: 3%;
-    }
-  }
-
-  .footer_img_add {
-    position: absolute;
-    right: 63px;
-    bottom: 20px;
-    width: 20px;
-    height: 23px;
-    object-fit: cover;
-  }
-
-  .footer_img_play {
-    position: absolute;
-    right: 20px;
-    bottom: 21px;
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
-  }
-
-  @media (min-width: 790px) {
-    .footer_img_add,
     .footer_img_play {
-      display: none;
+      position: absolute;
+      right: 20px;
+      bottom: 21px;
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
     }
-  }
-  .footer_bottom_line {
-    width: 95%;
-    height: 2px;
-    background-color: #dbdbdb21;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-    overflow: hidden;
 
     @media (min-width: 790px) {
-      display: none;
+      .footer_img_add,
+      .footer_img_play {
+        display: none;
+      }
     }
-
-    .footer_bottom_line_progress {
-      width: 50%;
+    .footer_bottom_line {
+      width: 95%;
       height: 2px;
-      background-color: $color-text-btn;
+      background-color: #dbdbdb21;
       position: absolute;
       bottom: 0;
-      left: 0;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 2;
+      overflow: hidden;
+
+      @media (min-width: 790px) {
+        display: none;
+      }
+
+      .footer_bottom_line_progress {
+        width: 50%;
+        height: 2px;
+        background-color: $color-text-btn;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+      }
+    }
+
+    .footer_right_section {
+      display: none;
+      align-items: center;
+      gap: 6.31px;
+
+      @media (min-width: 790px) {
+        display: flex;
+      }
+
+      .footer_right_section_image_box {
+        width: 47.78px;
+        height: 47.78px;
+        object-fit: cover;
+        @include flex-center;
+      }
+
+      .footer_right_section_image_box_line {
+        padding: 3px 8.5px;
+        width: 17px;
+        // height: 17px;
+        // object-fit: cover;
+        // @include flex-center;
+      }
     }
   }
+}
+@media (min-width: 790px) {
+  footer {
+    max-width: 1771px;
+    padding-left: 266px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-clip: content-box;
+  }
+}
 
-  .footer_right_section {
-    display: none;
-    align-items: center;
-    gap: 6.31px;
+//album page
 
-    @media (min-width: 790px) {
-      display: flex;
+.album_main_box {
+  // @include flex-space-between;
+  background-color: rgb(143, 13, 13);
+  display: grid;
+  grid-template-columns: 1fr;
+
+  align-items: start;
+  gap: 38px;
+
+  @media (min-width: 1260px) {
+    grid-template-columns: 2fr 1fr;
+  }
+  .album_left_section {
+    .album_title {
+      @include flex-column;
+      gap: 20px;
+      h1 {
+        font-size: $font-size-36;
+        font-weight: $font-weight-bold;
+        letter-spacing: 3%;
+        text-wrap: nowrap;
+      }
+      p {
+        @include flex-center;
+        justify-content: start;
+        gap: 10px;
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        letter-spacing: 3%;
+        color: $color-text-alt;
+        cursor: pointer;
+
+        .album_title_text_white {
+          color: $color-text-btn;
+        }
+      }
     }
-
-    .footer_right_section_image_box {
-      width: 47.78px;
-      height: 47.78px;
-      object-fit: cover;
-      @include flex-center;
-    }
-
-    .footer_right_section_image_box_line {
-      padding: 3px 8.5px;
-      width: 17px;
-      // height: 17px;
-      // object-fit: cover;
-      // @include flex-center;
+    .icons_big_box {
+      @include flex-space-between;
+      gap: 56.71px;
+      .icons_boxs {
+        @include flex-space-between;
+        gap: 14px;
+        .icon_box {
+          width: 40.41px;
+          height: 40.41px;
+          object-fit: cover;
+          cursor: pointer;
+          @include flex-center;
+        }
+        .circle {
+          background-color: $color-bg-circle;
+          border-radius: $radius-pill;
+        }
+      }
     }
   }
 }
 
-@media (min-width: 790px) {
-  footer {
-    width: calc(100% - 263px);
-    bottom: 10px;
-    left: 263px;
-    transform: none;
+// album table
+.album_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  color: $color-text-alt;
+
+  thead {
+    tr {
+      th {
+        font-size: $font-size-base;
+        font-weight: $font-weight-regular;
+        letter-spacing: 3%;
+        text-align: left;
+        padding: 12px;
+        border-bottom: 1px solid rgba(137, 137, 137, 0.3); // უფრო რბილი ხაზი
+
+        &.col_title {
+          // width: 100%;
+          max-width: 400px;
+        }
+        &.col_duration {
+          width: 8%;
+          min-width: 50px;
+          max-width: 90px;
+          text-align: right;
+        }
+        &.col_heart {
+          width: 30%;
+          min-width: 50px;
+          max-width: 220px;
+        }
+        &.col_free {
+          width: 100%;
+          max-width: 280px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+
+      td {
+        padding: 12px;
+        vertical-align: middle;
+
+        &.title .title_box {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          color: $color-text-btn;
+          white-space: nowrap;
+
+          span {
+            color: $color-text-alt;
+            font-size: 0.9em;
+          }
+        }
+
+        &.music_duration {
+          text-align: right;
+        }
+
+        &.table_img_box {
+          width: 40px;
+          cursor: pointer;
+
+          img {
+            width: 18px;
+            height: 18px;
+            @include flex-center;
+            display: block;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.album_right_section {
+  @include flex-column;
+  gap: 30px;
+
+  .album_right_section_button_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 350px;
+    button {
+      padding: 10px 20px;
+      border-radius: $radius-44;
+      border: 2px solid rgba($color-text-alt, 0.25);
+      cursor: pointer;
+      color: $color-text-alt;
+      background-color: transparent;
+      font-size: $font-size-base;
+      font-weight: $font-weight-regular;
+      letter-spacing: 3%;
+    }
+  }
+
+  .album_right_section_artist_box {
+    @include flex-column;
+    gap: 15px;
+
+    div {
+      @include align-center;
+      gap: 20px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: $radius-pill;
+      }
+
+      h3 {
+        font-size: $font-size-md;
+        font-weight: $font-weight-medium;
+        letter-spacing: 3%;
+        color: $color-text-alt;
+      }
+    }
   }
 }
