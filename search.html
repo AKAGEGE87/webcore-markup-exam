@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Search</title>
     <link
       href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap"
       rel="stylesheet"
@@ -16,15 +16,15 @@
         <nav class="header_nav">
           <ul>
             <li class="my_library">
-              <a href="./index.html">
+              <a href="./library.html">
                 <div>
                   <img
                     src="./assets/home_images/svg/library.svg"
                     alt="library"
                   />
                 </div>
-                <span>My Library</span></a
-              >
+                <span>My Library</span>
+              </a>
             </li>
             <li>
               <a href="./index.html">
@@ -43,9 +43,9 @@
               >
             </li>
             <li class="header-search">
-              <a href="./search.html">
+              <a href="./search.html" class="active">
                 <div>
-                  <img  src="./assets/home_images/svg/search.svg" alt="search" />
+                  <img src="./assets/home_images/svg/search.svg" alt="search" />
                 </div>
                 <span>Search</span></a
               >
@@ -117,16 +117,28 @@
         </nav>
       </header>
       <section class="search-bar">
-        <input type="text" class="search-input" placeholder="What do you want to play? " />
-        <img class="search-icon" src="./assets/search_images/svg/search.svg" alt="search icon">
-        <img class="camera-icon" src="./assets/search_images/svg/camera.svg" alt="camera icon">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="What do you want to play? "
+        />
+        <img
+          class="search-icon"
+          src="./assets/search_images/svg/search.svg"
+          alt="search icon"
+        />
+        <img
+          class="camera-icon"
+          src="./assets/search_images/svg/camera.svg"
+          alt="camera icon"
+        />
       </section>
       <div class="main_box">
         <aside class="main_box_aside">
           <nav>
             <ul>
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="pins.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/pin.svg"
@@ -134,7 +146,7 @@
                     />
                   </div>
                   <p>Pins</p>
-                </div>
+                </a>
                 <img
                   src="./assets/home_images/desktop_images/svg/aside_arrow.svg"
                   alt="arrow"
@@ -143,7 +155,7 @@
               </li>
 
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="playlist.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/playlist.svg"
@@ -151,7 +163,7 @@
                     />
                   </div>
                   <p>Playlists</p>
-                </div>
+                </a>
                 <img
                   src="./assets/home_images/desktop_images/svg/aside_arrow.svg"
                   alt="arrow"
@@ -160,7 +172,7 @@
               </li>
 
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="liked_songs.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/heart.svg"
@@ -168,11 +180,11 @@
                     />
                   </div>
                   <p>Liked songs</p>
-                </div>
+                </a>
               </li>
 
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="saves.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/saves.svg"
@@ -180,11 +192,11 @@
                     />
                   </div>
                   <p>Saves</p>
-                </div>
+                </a>
               </li>
 
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="./album.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/albums.svg"
@@ -192,11 +204,11 @@
                     />
                   </div>
                   <p>Albums</p>
-                </div>
+                </a>
               </li>
 
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="folders.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/folder.svg"
@@ -204,11 +216,11 @@
                     />
                   </div>
                   <p>Folders</p>
-                </div>
+                </a>
               </li>
 
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="podcasts.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/podcasts.svg"
@@ -216,11 +228,11 @@
                     />
                   </div>
                   <p>Podcasts</p>
-                </div>
+                </a>
               </li>
 
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="audiobooks.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/audiobooks.svg"
@@ -228,11 +240,11 @@
                     />
                   </div>
                   <p>Audiobooks</p>
-                </div>
+                </a>
               </li>
 
               <li class="aside_item">
-                <div class="aside_content">
+                <a href="artists.html" class="aside_content">
                   <div class="aside_img_box">
                     <img
                       src="./assets/home_images/desktop_images/svg/artists.svg"
@@ -240,227 +252,317 @@
                     />
                   </div>
                   <p>Artists</p>
-                </div>
+                </a>
               </li>
             </ul>
           </nav>
         </aside>
-      <main class="search-main-box">
-      <section class="recent-searches">
-        <h3>Recent searches</h3>
-        <div class="resent-searches-list">
-        <div class="recent-searches-box">
-        <img src="./assets/search_images/img/daft punk.png" alt="album cover">
-        <span>Daft Punk</span></div>
-        <div class="recent-searches-box">
-        <img src="./assets/search_images/img/david bowie.png" alt="album cover">
-        <span>David Bowie</span></div>
-        <div class="recent-searches-box">
-        <img src="./assets/search_images/img/black holes.png" alt="album cover">
-        <span>Black Holes...</span></div>
-        </div>
-      </section>
-      <section class="discover">
-        <h3>Browse all</h3>
-        <span>Discover</span>
-        <span class="arrows">
-          <img src="./assets/search_images/svg/left arrow.svg" alt="arrow icon">
-          <img src="./assets/search_images/svg/right arrow.svg" alt="arrow icon">
-          <img src="./assets/search_images/svg/dots.svg" alt="dots icon">
-        </span>
-        <div class="search-cards-box">
-        <article class="search-made-for-you-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/made-for-you.png" alt="card image">
-          <h3 class="search-card-headers">Made For You</h3>
-        </article>
-        <article class="search-new-releases-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/new-releasses.png" alt="card image">
-          <h3 class="search-card-headers">New Releases</h3>
-        </article>
-        <article class="search-spotify-classics-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/spotify-classics.png" alt="card image">
-          <h3 class="search-card-headers">Spotify Classics</h3>
-        </article>
-        <article class="search-charts-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/charts.png" alt="card image">
-          <h3 class="search-card-headers">Charts</h3>
-        </article>
-        <article class="search-trending-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/trending.png" alt="card image">
-          <h3 class="search-card-headers">Trending</h3>
-        </article>
-        <article class="search-discover-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/discover.png" alt="card image">
-          <h3 class="search-card-headers">Discover</h3>
-        </article>
-        <article class="search-spotify-singles-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/spotify-singles.png" alt="card image">
-          <h3 class="search-card-headers">Spotify Singles</h3>
-        </article>
-        <article class="search-decades-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/decades.png" alt="card image">
-          <h3 class="search-card-headers">Decades</h3>
-        </article>
-        
-        </div>
-      </section>
-      <section class="genres">
-        <span>Genres</span>
-         <span class="arrows">
-          <img src="./assets/search_images/svg/left arrow.svg" alt="arrow icon">
-          <img src="./assets/search_images/svg/right arrow.svg" alt="arrow icon">
-          <img src="./assets/search_images/svg/dots.svg" alt="dots icon">
-        </span>
-        <div class="search-cards-box">
-          <article class="search-pop-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/pop.png" alt="card image">
-          <h3 class="search-card-headers">pop</h3>
-        </article>
-        <article class="search-country-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/country.png" alt="card image">
-          <h3 class="search-card-headers">Country</h3>
-        </article>
-        <article class="search-hip-hop-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/hip-hop.png" alt="card image">
-          <h3 class="search-card-headers">Hip-hop</h3>
-        </article>
-        <article class="search-rock-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/rock.png" alt="card image">
-          <h3 class="search-card-headers">Rock</h3>
-        </article>
-        <article class="search-indie-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/indie.png" alt="card image">
-          <h3 class="search-card-headers">Indie</h3>
-        </article>
-        <article class="search-punk-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/punk.png" alt="card image">
-          <h3 class="search-card-headers">Punk</h3>
-        </article>
-        <article class="search-metal-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/metal.png" alt="card image">
-          <h3 class="search-card-headers">Metal</h3>
-        </article>
-        <article class="search-instrumental-card">
-          <img class="search-card-imgs" src="./assets/search_images/img/instrumental.png" alt="card image">
-          <h3 class="search-card-headers">Instrumental</h3>
-        </article>
-        </div>
-      </section>
-      </main>
+        <main class="search-main-box">
+          <section class="recent-searches">
+            <h3>Recent searches</h3>
+            <div class="resent-searches-list">
+              <div class="recent-searches-box">
+                <img
+                  src="./assets/search_images/img/daft punk.png"
+                  alt="album cover"
+                />
+                <span>Daft Punk</span>
+              </div>
+              <div class="recent-searches-box">
+                <img
+                  src="./assets/search_images/img/david bowie.png"
+                  alt="album cover"
+                />
+                <span>David Bowie</span>
+              </div>
+              <div class="recent-searches-box">
+                <img
+                  src="./assets/search_images/img/black holes.png"
+                  alt="album cover"
+                />
+                <span>Black Holes...</span>
+              </div>
+            </div>
+          </section>
+          <section class="discover">
+            <h3>Browse all</h3>
+            <span>Discover</span>
+            <span class="arrows">
+              <img
+                src="./assets/search_images/svg/left arrow.svg"
+                alt="arrow icon"
+              />
+              <img
+                src="./assets/search_images/svg/right arrow.svg"
+                alt="arrow icon"
+              />
+              <img src="./assets/search_images/svg/dots.svg" alt="dots icon" />
+            </span>
+            <div class="search-cards-box">
+              <article class="search-made-for-you-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/made-for-you.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Made For You</h3>
+              </article>
+              <article class="search-new-releases-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/new-releasses.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">New Releases</h3>
+              </article>
+              <article class="search-spotify-classics-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/spotify-classics.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Spotify Classics</h3>
+              </article>
+              <article class="search-charts-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/charts.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Charts</h3>
+              </article>
+              <article class="search-trending-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/trending.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Trending</h3>
+              </article>
+              <article class="search-discover-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/discover.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Discover</h3>
+              </article>
+              <article class="search-spotify-singles-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/spotify-singles.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Spotify Singles</h3>
+              </article>
+              <article class="search-decades-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/decades.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Decades</h3>
+              </article>
+            </div>
+          </section>
+          <section class="genres">
+            <span>Genres</span>
+            <span class="arrows">
+              <img
+                src="./assets/search_images/svg/left arrow.svg"
+                alt="arrow icon"
+              />
+              <img
+                src="./assets/search_images/svg/right arrow.svg"
+                alt="arrow icon"
+              />
+              <img src="./assets/search_images/svg/dots.svg" alt="dots icon" />
+            </span>
+            <div class="search-cards-box">
+              <article class="search-pop-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/pop.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">pop</h3>
+              </article>
+              <article class="search-country-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/country.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Country</h3>
+              </article>
+              <article class="search-hip-hop-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/hip-hop.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Hip-hop</h3>
+              </article>
+              <article class="search-rock-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/rock.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Rock</h3>
+              </article>
+              <article class="search-indie-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/indie.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Indie</h3>
+              </article>
+              <article class="search-punk-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/punk.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Punk</h3>
+              </article>
+              <article class="search-metal-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/metal.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Metal</h3>
+              </article>
+              <article class="search-instrumental-card">
+                <img
+                  class="search-card-imgs"
+                  src="./assets/search_images/img/instrumental.png"
+                  alt="card image"
+                />
+                <h3 class="search-card-headers">Instrumental</h3>
+              </article>
+            </div>
+          </section>
+        </main>
       </div>
       <footer>
-        <section class="footer_left_section">
-          <article class="footer_left_section_article">
-            <div class="footer_left_section_play">
+        <div class="footer_box">
+          <section class="footer_left_section">
+            <article class="footer_left_section_article">
+              <div class="footer_left_section_play">
+                <img
+                  src="./assets/home_images/desktop_images/svg/play-two-lines.svg"
+                  alt=""
+                />
+              </div>
               <img
-                src="./assets/home_images/desktop_images/svg/play-two-lines.svg"
+                src="./assets/home_images/desktop_images/svg/back.svg"
+                alt=""
+              />
+              <img
+                src="./assets/home_images/desktop_images/svg/next.svg"
+                alt=""
+              />
+              <img
+                src="./assets/home_images/desktop_images/svg/messy.svg"
+                alt=""
+              />
+              <img
+                src="./assets/home_images/desktop_images/svg/repetition.svg"
+                alt=""
+              />
+            </article>
+            <img
+              src="./assets/home_images/desktop_images/svg/music_line.svg"
+              alt=""
+            />
+            <div class="footer_left_section_volume_box">
+              <img
+                src="./assets/home_images/desktop_images/svg/volume.svg"
                 alt=""
               />
             </div>
-            <img
-              src="./assets/home_images/desktop_images/svg/back.svg"
-              alt=""
-            />
-            <img
-              src="./assets/home_images/desktop_images/svg/next.svg"
-              alt=""
-            />
-            <img
-              src="./assets/home_images/desktop_images/svg/messy.svg"
-              alt=""
-            />
-            <img
-              src="./assets/home_images/desktop_images/svg/repetition.svg"
-              alt=""
-            />
-          </article>
-          <img
-            src="./assets/home_images/desktop_images/svg/music_line.svg"
-            alt=""
-          />
-          <div class="footer_left_section_volume_box">
-            <img
-              src="./assets/home_images/desktop_images/svg/volume.svg"
-              alt=""
-            />
-          </div>
-        </section>
+          </section>
 
-        <section class="footer_center_section">
-          <img
-            src="./assets/home_images/img/1.png"
-            alt="icon"
-            class="footer_img"
-          />
-          <article class="footer_center_section_text">
-            <h3>Get Lucky (feat. Pharrell Williams and Nile Rodgers)</h3>
-            <p>Daft Punk</p>
-          </article>
-          <img
-            src="./assets/home_images/svg/add.svg"
-            alt="add"
-            class="footer_img_add"
-          />
-          <img
-            src="./assets/home_images/svg/play.svg"
-            alt="play"
-            class="footer_img_play"
-          />
-          <div class="footer_bottom_line">
-            <div class="footer_bottom_line_progress"></div>
-          </div>
-        </section>
+          <section class="footer_center_section">
+            <img
+              src="./assets/home_images/img/1.png"
+              alt="icon"
+              class="footer_img"
+            />
+            <article class="footer_center_section_text">
+              <h3>Get Lucky (feat. Pharrell Williams and Nile Rodgers)</h3>
+              <p>Daft Punk</p>
+            </article>
+            <img
+              src="./assets/home_images/svg/add.svg"
+              alt="add"
+              class="footer_img_add"
+            />
+            <img
+              src="./assets/home_images/svg/play.svg"
+              alt="play"
+              class="footer_img_play"
+            />
+            <div class="footer_bottom_line">
+              <div class="footer_bottom_line_progress"></div>
+            </div>
+          </section>
 
-        <section class="footer_right_section">
-          <article class="footer_right_section_image_box">
-            <img
-              src="./assets/home_images/desktop_images/svg/heart.svg"
-              alt=""
-            />
-          </article>
+          <section class="footer_right_section">
+            <article class="footer_right_section_image_box">
+              <img
+                src="./assets/home_images/desktop_images/svg/heart.svg"
+                alt=""
+              />
+            </article>
 
-          <article class="footer_right_section_image_box">
-            <img src="./assets/home_images/svg/add.svg" alt="" />
-          </article>
-          <article class="footer_right_section_image_box">
-            <img
-              src="./assets/home_images/desktop_images/svg/noti.svg"
-              alt=""
-            />
-          </article>
-          <article class="footer_right_section_image_box">
-            <img
-              src="./assets/home_images/desktop_images/svg/frame4.svg"
-              alt=""
-            />
-          </article>
-          <article class="footer_right_section_image_box">
-            <img
-              src="./assets/home_images/desktop_images/svg/dots.svg"
-              alt=""
-            />
-          </article>
-          <article
-            class="footer_right_section_image_box footer_right_section_image_box_line"
-          >
-            <img
-              src="./assets/home_images/desktop_images/svg/line.svg"
-              alt=""
-            />
-          </article>
-          <article class="footer_right_section_image_box">
-            <img
-              src="./assets/home_images/desktop_images/svg/blue_img.svg"
-              alt=""
-            />
-          </article>
-          <article class="footer_right_section_image_box">
-            <img
-              src="./assets/home_images/desktop_images/svg/last_icon.svg"
-              alt=""
-            />
-          </article>
-        </section>
+            <article class="footer_right_section_image_box">
+              <img src="./assets/home_images/svg/add.svg" alt="" />
+            </article>
+            <article class="footer_right_section_image_box">
+              <img
+                src="./assets/home_images/desktop_images/svg/noti.svg"
+                alt=""
+              />
+            </article>
+            <article class="footer_right_section_image_box">
+              <img
+                src="./assets/home_images/desktop_images/svg/frame4.svg"
+                alt=""
+              />
+            </article>
+            <article class="footer_right_section_image_box">
+              <img
+                src="./assets/home_images/desktop_images/svg/dots.svg"
+                alt=""
+              />
+            </article>
+            <article
+              class="footer_right_section_image_box footer_right_section_image_box_line"
+            >
+              <img
+                src="./assets/home_images/desktop_images/svg/line.svg"
+                alt=""
+              />
+            </article>
+            <article class="footer_right_section_image_box">
+              <img
+                src="./assets/home_images/desktop_images/svg/blue_img.svg"
+                alt=""
+              />
+            </article>
+            <article class="footer_right_section_image_box">
+              <img
+                src="./assets/home_images/desktop_images/svg/last_icon.svg"
+                alt=""
+              />
+            </article>
+          </section>
+        </div>
       </footer>
+    </div>
   </body>
 </html>

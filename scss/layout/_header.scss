@@ -37,6 +37,15 @@ header {
     gap: 8px;
     color: $color-text-alt;
 
+    &.active {
+      background-color: rgba(20, 20, 20, 0.5);
+      border-radius: $radius-lg;
+      color: $color-white;
+      div img {
+        filter: brightness(0) invert(1);
+      }
+    }
+
     @media (min-width: 790px) {
       flex-direction: row;
       justify-content: start;

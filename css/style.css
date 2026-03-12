@@ -13,14 +13,6 @@ li {
   list-style: none;
 }
 
-
-.container {
-  max-width: 1771px;
-  margin: auto;
-  background-color: #060606;
-  position: relative;
-}
-
 header {
   padding: 16px 28.56px 24px 27.79px;
   position: absolute;
@@ -58,6 +50,14 @@ header {
   width: 100%;
   gap: 8px;
   color: #898989;
+}
+.header_nav ul li a.active {
+  background-color: rgba(20, 20, 20, 0.5);
+  border-radius: 10px;
+  color: #ffffff;
+}
+.header_nav ul li a.active div img {
+  filter: brightness(0) invert(1);
 }
 @media (min-width: 790px) {
   .header_nav ul li a {
@@ -267,7 +267,7 @@ footer .footer_box .footer_right_section .footer_right_section_image_box_line {
   max-width: 1771px;
   min-height: 100vh;
   margin: auto;
-  background-color: #111111;
+  background-color: #060606;
   position: relative;
 }
 
@@ -1032,10 +1032,6 @@ body {
 }
 
 @media (min-width: 790px) {
-  .header_nav ul .header-search {
-    background-color: #202020;
-    border-radius: 10px;
-  }
   .header_nav ul .header-search span {
     opacity: 50%;
   }
@@ -1227,7 +1223,7 @@ footer {
   }
 }
 .search-made-for-you-card {
-  background-color: #1E3264;
+  background-color: #1e3264;
 }
 
 .search-new-releases-card {
@@ -1246,7 +1242,7 @@ footer {
   }
 }
 .search-new-releases-card {
-  background-color: #BA5D07;
+  background-color: #ba5d07;
 }
 
 .search-spotify-classics-card {
@@ -1265,7 +1261,7 @@ footer {
   }
 }
 .search-spotify-classics-card {
-  background-color: #1E3264;
+  background-color: #1e3264;
 }
 
 .search-charts-card {
@@ -1284,7 +1280,7 @@ footer {
   }
 }
 .search-charts-card {
-  background-color: #8D67AB;
+  background-color: #8d67ab;
 }
 
 .search-trending-card {
@@ -1303,7 +1299,7 @@ footer {
   }
 }
 .search-trending-card {
-  background-color: #B02897;
+  background-color: #b02897;
 }
 
 .search-discover-card {
@@ -1322,7 +1318,7 @@ footer {
   }
 }
 .search-discover-card {
-  background-color: #8D67AB;
+  background-color: #8d67ab;
 }
 
 .search-spotify-singles-card {
@@ -1360,7 +1356,7 @@ footer {
   }
 }
 .search-decades-card {
-  background-color: #BA5D07;
+  background-color: #ba5d07;
 }
 
 .search-pop-card {
@@ -1379,7 +1375,7 @@ footer {
   }
 }
 .search-pop-card {
-  background-color: #148A08;
+  background-color: #148a08;
 }
 
 .search-country-card {
@@ -1398,7 +1394,7 @@ footer {
   }
 }
 .search-country-card {
-  background-color: #D84000;
+  background-color: #d84000;
 }
 
 .search-hip-hop-card {
@@ -1455,7 +1451,7 @@ footer {
   }
 }
 .search-indie-card {
-  background-color: #E91429;
+  background-color: #e91429;
 }
 
 .search-punk-card {
@@ -1474,7 +1470,7 @@ footer {
   }
 }
 .search-punk-card {
-  background-color: #1E3264;
+  background-color: #1e3264;
 }
 
 .search-metal-card {
@@ -1493,7 +1489,7 @@ footer {
   }
 }
 .search-metal-card {
-  background-color: #E91429;
+  background-color: #e91429;
 }
 
 .search-instrumental-card {
@@ -1512,9 +1508,8 @@ footer {
   }
 }
 .search-instrumental-card {
-  background-color: #537AA1;
+  background-color: #537aa1;
 }
-
 
 .main_box_aside {
   position: sticky;
