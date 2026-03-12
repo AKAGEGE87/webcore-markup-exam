@@ -19,6 +19,11 @@
   align-items: center;
 }
 
+@mixin align-center {
+  display: flex;
+  align-items: center;
+}
+
 @mixin aside-btn {
   @include flex-center;
   padding: 8px 15px;
