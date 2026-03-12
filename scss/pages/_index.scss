@@ -1,4 +1,7 @@
 @forward "./home";
 @forward "./discover";
 @forward "./search";
-@forward "./album";
+
+@forward "./library";
+@forward "./liked_songs"
+  @forward "./album";
