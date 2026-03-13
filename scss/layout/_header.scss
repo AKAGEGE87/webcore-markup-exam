@@ -28,6 +28,26 @@ header {
     max-width: 210px;
     min-width: 0;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      border-radius: $radius-lg;
+      background-color: rgba($color-text-time, 0.5);
+      transition: width 0.5s ease-out;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
   }
 
   li a {
@@ -38,7 +58,7 @@ header {
     color: $color-text-alt;
 
     &.active {
-      background-color: rgba(20, 20, 20, 0.5);
+      background-color: rgba($color-text-time, 0.8);
       border-radius: $radius-lg;
       color: $color-white;
       div img {
@@ -77,5 +97,24 @@ header {
   .header_nav_library,
   .header_nav_me {
     display: none;
+  }
+}
+
+.header_nav_second ul {
+  justify-content: flex-end;
+  display: none;
+  gap: 13px;
+  li a {
+    width: 41.41px;
+    height: 41.41px;
+    @include flex-center;
+    img:hover {
+      filter: brightness(0) invert(1);
+      scale: 1.1;
+    }
+  }
+
+  @media (min-width: 790px) {
+    display: flex;
   }
 }
